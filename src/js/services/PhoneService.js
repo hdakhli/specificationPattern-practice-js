@@ -26,7 +26,7 @@ export class PhoneService {
     }
 
     /**
-     * Premium (cost >= 400)
+     * Premium (cost >= 400 && not Basic)
      * @return All premium phones
      */
     getAllPremiumPhones() {
