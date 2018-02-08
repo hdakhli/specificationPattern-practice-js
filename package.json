@@ -1,0 +1,22 @@
+{
+  "name": "specification-pattern-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "author": "Hicham DAKHLI",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-polyfill": "6.5.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1"
+  }
+}
