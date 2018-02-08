@@ -51,8 +51,7 @@ describe('PhoneService unit tests', () => {
         expect(phones.length).toEqual(30);
     });
 
-    const getPhones = () => {
-        [
+    const getPhones = () => [
             {
                 "_id": "5a6e0b8961f7720dcced794b",
                 "version": 2,
@@ -488,5 +487,4 @@ describe('PhoneService unit tests', () => {
                 "cost": 639.9065
             }
         ];
-    }
 });
