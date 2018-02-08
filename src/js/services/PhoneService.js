@@ -23,7 +23,7 @@ export class PhoneService {
      * @return All premium phones
      */
     getAllPremiumPhones() {
-        return this.phones.filter(phone => phone.cost >= 400);
+        return this.phones.filter(phone => phone.cost >= 400 && phone.type !== 'BASIC');
     }
 
     /**
@@ -37,7 +37,7 @@ export class PhoneService {
      * @return Only premium brand Samsung
      */
     getPremiumSamsungPhones() {
-        return this.phones.filter(phone => phone.brand === 'SAMSUNG' && phone.cost >= 400);
+        return this.phones.filter(phone => phone.brand === 'SAMSUNG' && phone.cost >= 400 && phone.type !== 'BASIC');
     }
 
     /**
@@ -51,7 +51,7 @@ export class PhoneService {
      * @return All premium and brand Samsung or HTC
      */
     getPremiumSamsungAndHTCPhones() {
-        return this.phones.filter(phone => (phone.brand === 'SAMSUNG' || phone.brand === 'HTC') && phone.cost >= 400);
+        return this.phones.filter(phone => (phone.brand === 'SAMSUNG' || phone.brand === 'HTC') && phone.cost >= 400 && phone.type !== 'BASIC');
     }
 
     /**
@@ -65,7 +65,7 @@ export class PhoneService {
      * @return All premium but brand Samsung and htc
      */
     getAllPremiumExceptSamsungAndHTCPhones() {
-        return this.phones.filter(phone => (phone.brand !== 'SAMSUNG' && phone.brand !== 'HTC') && phone.cost >= 400);
+        return this.phones.filter(phone => (phone.brand !== 'SAMSUNG' && phone.brand !== 'HTC') && phone.cost >= 400 && phone.type !== 'BASIC');
     }
 
 }
