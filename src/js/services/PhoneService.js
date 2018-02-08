@@ -19,53 +19,53 @@ export class PhoneService {
     }
 
     /**
-     * Premium (cost >= 400 and not basic phones)
+     * Premium (cost >= 400)
      * @return All premium phones
      */
     getAllPremiumPhones() {
-        return this.phones.filter(phone => phone.cost >= 400 && phone.type !== 'BASIC');
+        return this.phones;
     }
 
     /**
      * @return Only brand Samsung
      */
     getSamsungPhones() {
-        return this.phones.filter(phone => phone.brand === 'SAMSUNG');
+        return this.phones;
     }
 
     /**
      * @return Only premium brand Samsung
      */
     getPremiumSamsungPhones() {
-        return this.phones.filter(phone => phone.brand === 'SAMSUNG' && phone.cost >= 400 && phone.type !== 'BASIC');
+        return this.phones;
     }
 
     /**
      * @return Either brand Samsung or HTC
      */
     getSamsungAndHTCPhones() {
-        return this.phones.filter(phone => phone.brand === 'SAMSUNG' || phone.brand === 'HTC');
+        return this.phones;
     }
 
     /**
      * @return All premium and brand Samsung or HTC
      */
     getPremiumSamsungAndHTCPhones() {
-        return this.phones.filter(phone => (phone.brand === 'SAMSUNG' || phone.brand === 'HTC') && phone.cost >= 400 && phone.type !== 'BASIC');
+        return this.phones;
     }
 
     /**
      * @return All but brand Samsung
      */
     getAllExceptSamsungPhones() {
-        return this.phones.filter(phone => phone.brand !== 'SAMSUNG');
+        return this.phones;
     }
 
     /**
      * @return All premium but brand Samsung and htc
      */
     getAllPremiumExceptSamsungAndHTCPhones() {
-        return this.phones.filter(phone => (phone.brand !== 'SAMSUNG' && phone.brand !== 'HTC') && phone.cost >= 400 && phone.type !== 'BASIC');
+        return this.phones;
     }
 
 }

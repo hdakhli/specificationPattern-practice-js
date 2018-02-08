@@ -12,7 +12,7 @@ describe('PhoneService unit tests', () => {
     test('getAllPremiumPhones test', () => {
         const phones = phoneService.getAllPremiumPhones();
         expect(phones).toBeDefined();
-        expect(phones.length).toEqual(13);
+        expect(phones.length).toEqual(37);
     });
 
     test('getSamsungPhones test', () => {
@@ -24,7 +24,7 @@ describe('PhoneService unit tests', () => {
     test('getPremiumSamsungPhones test', () => {
         const phones = phoneService.getPremiumSamsungPhones();
         expect(phones).toBeDefined();
-        expect(phones.length).toEqual(3);
+        expect(phones.length).toEqual(4);
     });
 
     test('getSamsungAndHTCPhones test', () => {
@@ -36,7 +36,7 @@ describe('PhoneService unit tests', () => {
     test('getPremiumSamsungAndHTCPhones test', () => {
         const phones = phoneService.getPremiumSamsungAndHTCPhones();
         expect(phones).toBeDefined();
-        expect(phones.length).toEqual(4);
+        expect(phones.length).toEqual(7);
     });
 
     test('getAllExceptSamsungPhones test', () => {
@@ -48,7 +48,7 @@ describe('PhoneService unit tests', () => {
     test('getAllPremiumExceptSamsungAndHTCPhones test', () => {
         const phones = phoneService.getAllPremiumExceptSamsungAndHTCPhones();
         expect(phones).toBeDefined();
-        expect(phones.length).toEqual(9);
+        expect(phones.length).toEqual(30);
     });
 
     const getPhones = () => [
