@@ -1,6 +1,6 @@
-import CompositeSpecification from '../specification-core/CompositeSpecification';
+import Specification from '../specification-core/Specification';
 
-export default class PremiumPhoneSpecification extends CompositeSpecification {
+export default class PremiumPhoneSpecification extends Specification {
 
     isSatisfiedBy (phone) {
         return phone.cost >= 400;

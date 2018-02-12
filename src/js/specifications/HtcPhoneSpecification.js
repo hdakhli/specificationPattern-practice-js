@@ -1,6 +1,6 @@
-import CompositeSpecification from '../specification-core/CompositeSpecification';
+import Specification from '../specification-core/Specification';
 
-export default class HtcPhoneSpecification extends CompositeSpecification {
+export default class HtcPhoneSpecification extends Specification {
 
     isSatisfiedBy (phone) {
         return phone.brand === 'HTC';
